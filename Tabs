@@ -20,5 +20,10 @@ $(".wrapper .tab").click(function() {
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 
-CSS:
-.wrapper .active { color: green; }
+sass:
+.wrapper .active
+	color: green
+.tab_item:first-child
+	display: block
+.tab_item
+	display: none
